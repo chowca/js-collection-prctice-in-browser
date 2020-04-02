@@ -2,8 +2,8 @@
 
 function createUpdatedCollection(collectionA, objectB) {
   var collectionC = [];
-  var exist = false;
   for (var i = 0; i < collectionA.length; i++) {
+    var exist = false;
     for (var j = 0; j < collectionC.length; j++) {
       if(collectionA[i] == collectionC[j].key){
         collectionC[j].count += 1;
