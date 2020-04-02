@@ -1,5 +1,6 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return 'Implement the practice require, and begin changing code in this row';
+  let temp = collectionB.flat();
+  return collectionA.filter(sameElement => temp.includes(sameElement));
 }
